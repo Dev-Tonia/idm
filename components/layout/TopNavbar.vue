@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="bg-primary text-white px-3 sm:px-5 md:px-20">
-    <div class="p-3 xsm:flex items-center justify-between">
+  <div class="bg-primary text-white wrapper">
+    <div class="px-3 py-2 xsm:flex items-center justify-between">
       <ul class="font-roboto text-xs xmd:flex font-medium">
         <li class="xmd:border-e xmd:pe-4">
           Call Us:<NuxtLink

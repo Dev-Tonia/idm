@@ -1,6 +1,5 @@
 <template>
-  <HomeHeroSection />
-  <HomeServices />
+  <button class="text-white"></button>
 </template>
 
 <script setup></script>
