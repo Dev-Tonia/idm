@@ -1,9 +1,11 @@
+<script setup></script>
+
 <template>
   <HomeHeroSection />
   <HomeServices />
+  <HomeAboutIntro />
+  <HomeIndustries />
   <HomeContactUs />
 </template>
-
-<script setup></script>
 
 <style lang="scss" scoped></style>

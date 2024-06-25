@@ -2,7 +2,7 @@
 const { title, description } = defineProps(["title", "description"]);
 </script>
 <template>
-  <div class="bg-white py-5 px-4 rounded-lg shadow-lg">
+  <div class="bg-white py-5 px-4 rounded-lg shadow-lg tra">
     <div class="flex flex-col items-center justify-center w-8/12 mx-auto">
       <slot />
       <h2 class="text-xl font-medium md:text-2xl py-3">{{ title }}</h2>

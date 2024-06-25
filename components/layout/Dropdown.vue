@@ -35,7 +35,6 @@ const { isOpen, dropdownOptions, itemClass } = defineProps({
   },
 });
 
-console.log(itemClass);
 const emit = defineEmits(["toggle"]);
 function toggle() {
   emit("toggle");

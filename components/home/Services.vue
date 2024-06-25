@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+// import { HomeServiceCard } from "#build/components";
+</script>
 
 <template>
   <section class="wrapper py-20 bg-[#F2F2F2]">
@@ -19,23 +21,19 @@
     >
       <HomeServiceCard
         title="SAP S/4HANA"
-        description=" SAP S/4HANA: A cutting-edge Enterprise Resource Planning (ERP) system that
-      streamlines business processes, accelerates decision-making, and enables
-      real-time insights"
+        description="S/4HANA: A cutting-edge Enterprise Resource Planning (ERP) system that streamlines business processes, accelerates decision-making, and enables real-time insights"
       >
         <img src="../../assets/imgs/sap-consulting.png" alt="" />
       </HomeServiceCard>
       <HomeServiceCard
         title="SAP Business One"
-        description="SAP Business One: Unparalleled ERP for small and medium-sized enterprises,
-      integrating CRM, sales, inventory, and financials."
+        description="SAP Business One: Unparalleled ERP for small and medium-sized enterprises, integrating CRM, sales, inventory, and financials."
       >
         <img src="../../assets/imgs/sap-business-one-logo.png" alt="" />
       </HomeServiceCard>
       <HomeServiceCard
         title="Sap Cloud"
-        description="B1Cloud is a Premium Cloud Hosting for SAP Business One, SQL & HANA at the fraction of the cost.
-         It’s an ideal cloud-based solution for MSMEs to run and reap all the benefits of SAP Business One without having to invest in infrastructure & complete peace of mind. "
+        description="B1Cloud is a Premium Cloud Hosting for SAP Business One, SQL & HANA at the fraction of the cost. It's an ideal cloud-based solution for MSMEs to run and reap all the benefits of SAP Business One without having to invest in infrastructure & complete peace of mind. "
       >
         <img src="../../assets/imgs/sap-cloud.jpg" alt="" />
       </HomeServiceCard>

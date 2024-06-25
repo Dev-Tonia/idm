@@ -1,7 +1,7 @@
 <template>
-  <button class="text-white"></button>
+  <button class="text-white rounded-full py-3"><slot></slot></button>
 </template>
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

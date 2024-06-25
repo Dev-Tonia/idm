@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#EE363F",
+        secondary: "#141D38",
       },
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],

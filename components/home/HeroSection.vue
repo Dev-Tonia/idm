@@ -1,24 +1,48 @@
 <script setup>
+import { ref, computed } from "vue";
+import { sliderImg3, sliderImg2, sliderImg1 } from "../../utils/images";
+
 const slides = [
   {
     title: " Transform Your Business with Our ERP Expertise.",
     subtitle: "Streamline Operations, Enhance Efficiency, and Drive Growth.",
+    bgImage: sliderImg1,
   },
   {
     title: "We Provide the Solutions to Grow your Business",
     subtitle: "Everything you need to grow your business. Contact Us today!",
+    bgImage: sliderImg2,
   },
   {
-    title: " Transform Your Business with Our ERP Expertise.",
+    title:
+      "IDM helps clients in the Intelligent Automation & Transformation of their businesses.",
     subtitle: "Streamline Operations, Enhance Efficiency, and Drive Growth.",
+    bgImage: sliderImg3,
   },
 ];
+
+const currentSlideIndex = ref(0);
+
+const currentBackgroundImage = computed(() => ({
+  backgroundImage: `linear-gradient(rgba(206, 12, 12, 0.3), rgba(206, 12, 13, 0.25)), url(${
+    slides[currentSlideIndex.value].bgImage
+  })`,
+}));
+
+const onSlideChange = (swiper) => {
+  if (swiper && swiper.realIndex !== undefined) {
+    currentSlideIndex.value = swiper.realIndex;
+  }
+};
 </script>
 <template>
   <section
     id="hero"
-    class="flex flex-col justify-end items-center w-full overflow-hidden h-[90vh] relative pt-20"
+    class="flex flex-col justify-end items-center w-full overflow-hidden h-screen pt-20 bg-cover bg-no-repeat relative"
+    :style="currentBackgroundImage"
   >
+    <!-- Overlay Element -->
+
     <Swiper
       :modules="[SwiperAutoplay, SwiperEffectCreative]"
       :loop="true"
@@ -36,7 +60,7 @@ const slides = [
           translate: ['100%', 0, 0],
         },
       }"
-      class=""
+      @slideChange="onSlideChange"
     >
       <SwiperSlide v-for="slide in slides" :key="slide">
         <div>
@@ -96,23 +120,24 @@ const slides = [
 </template>
 
 <style scoped>
-#hero {
+/* #hero {
   background: linear-gradient(
     0deg,
     rgb(238, 54, 63) 100%,
     rgb(237, 238, 243) 0%
   );
-}
+} */
+/*
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(206, 12, 12, 0.9);
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: 10
 }
-
+*/
 .wave1 use {
   animation: move-forever1 10s linear infinite;
   animation-delay: -2s;
