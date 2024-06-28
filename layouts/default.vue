@@ -30,6 +30,8 @@
   <main>
     <slot></slot>
   </main>
+
+  <LayoutFooter />
 </template>
 
 <style lang="scss" scoped></style>

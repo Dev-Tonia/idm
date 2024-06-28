@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#EE363F",
+        // primary: "#EE363F",
+        primary: "#fe002f",
         secondary: "#141D38",
       },
       fontFamily: {
@@ -21,6 +22,9 @@ module.exports = {
       screens: {
         xmd: "500px",
         xsm: "320px",
+      },
+      spacing: {
+        64: "16rem",
       },
     },
   },

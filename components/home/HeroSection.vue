@@ -120,24 +120,6 @@ const onSlideChange = (swiper) => {
 </template>
 
 <style scoped>
-/* #hero {
-  background: linear-gradient(
-    0deg,
-    rgb(238, 54, 63) 100%,
-    rgb(237, 238, 243) 0%
-  );
-} */
-/*
-#hero:before {
-  content: "";
-  background: rgba(206, 12, 12, 0.9);
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 10
-}
-*/
 .wave1 use {
   animation: move-forever1 10s linear infinite;
   animation-delay: -2s;

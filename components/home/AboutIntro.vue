@@ -14,12 +14,10 @@ import { aboutIntroImg } from "../../utils/images";
 
       <div class="md:w-1/2">
         <div>
-          <h6
-            class="border-l-2 border-l-gray-950 py-1 px-2 font-semibold text-xl"
+          <HomeSubSectionTitle title=" About Us" />
+          <h2
+            class="text-3xl md:text-4xl text-secondary pb-5 pt-1 font-semibold"
           >
-            About us
-          </h6>
-          <h2 class="text-3xl md:text-4xl text-secondary mb-5 font-semibold">
             We Are Increasing Business Success With
             <span class="text-primary/90">IT Solution</span>
           </h2>
@@ -32,7 +30,7 @@ import { aboutIntroImg } from "../../utils/images";
 
         <div>
           <CommonButton
-            class="bg-secondary text-xl font-semibold px-10 transition ease-in-out delay-300 hover:bg-primary/90 hover:text-white"
+            class="bg-primary text-xl font-semibold px-10 transition ease-in-out delay-300 hover:bg-secondary/90 hover:text-white"
             >Read More</CommonButton
           >
         </div>

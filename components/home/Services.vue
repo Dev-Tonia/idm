@@ -4,9 +4,8 @@
 
 <template>
   <section class="wrapper py-20 bg-[#F2F2F2]">
-    <h6 class="border-l-2 border-l-gray-950 py-1 px-2">
-      What we can help you do
-    </h6>
+    <HomeSubSectionTitle title=" What we can help you do " />
+
     <h3
       class="text-2xl xsm:text-3xl md:text-4xl text-center font-semibold text-gray-950"
     >
