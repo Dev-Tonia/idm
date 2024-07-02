@@ -13,17 +13,19 @@ const toggleIsOpen = () => {
 </script>
 
 <template>
-  <footer class="bg-[#000017] py-4">
+  <footer class="bg-[#000017] text-gray-100 pt-9">
     <div class="md:grid md:grid-cols-3 gap-6 wrapper">
       <div class="mb-6 md:mb-0 md:col-span-1">
-        <NuxtLink to="/" class="">
-          <img
-            :src="brandLogo"
-            class="mr-3 h-12 w-full object-contain"
-            alt="brand Logo"
-          />
-        </NuxtLink>
-        <div class="text-gray-400 py-4">
+        <div>
+          <NuxtLink to="/" class="">
+            <img
+              :src="brandLogo"
+              class="mr-3 h-12 object-contain"
+              alt="brand Logo"
+            />
+          </NuxtLink>
+        </div>
+        <div class="py-4">
           <p class="mb-2">
             International Data Management Services Limited (IDM), incorporated
             in Nigeria in 1981 is affiliated with Comcraft Services Limited,
@@ -36,19 +38,13 @@ const toggleIsOpen = () => {
             Management in African Enterprises.
           </p>
         </div>
-        <div class="mt-4 flex items-center gap-3 md:block">
-          <span class="text-gray-300 inline-block mb-2"> Follows on:</span>
-          <LayoutSocials class="gap-x-6" />
-        </div>
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 md:col-span-2">
         <div>
-          <h2
-            class="mb-6 text-sm font-semibold text-gray-300 uppercase dark:text-white"
-          >
+          <h2 class="mb-6 text-sm font-semibold uppercase dark:text-white">
             Service
           </h2>
-          <ul class="text-gray-400">
+          <ul class="">
             <li class="mb-2">
               <div class="space-x-8 font-medium mb-4" @click="toggleIsOpen">
                 <span>SAP</span> <Icon name="ep:arrow-down-bold" />
@@ -72,10 +68,8 @@ const toggleIsOpen = () => {
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-300 uppercase">
-            Industries
-          </h2>
-          <ul class="text-gray-400">
+          <h2 class="mb-6 text-sm font-semibold uppercase">Industries</h2>
+          <ul class="">
             <li
               class="mb-2"
               v-for="(industry, index) in navLinks.industries.items"
@@ -88,10 +82,8 @@ const toggleIsOpen = () => {
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-300 uppercase">
-            Solutions
-          </h2>
-          <ul class="text-gray-400">
+          <h2 class="mb-6 text-sm font-semibold uppercase">Solutions</h2>
+          <ul class="">
             <li
               class="mb-2"
               v-for="(solution, index) in navLinks.solutions.items"
@@ -106,16 +98,19 @@ const toggleIsOpen = () => {
       </div>
     </div>
 
-    <hr class="my-6 border-gray-400 sm:mx-auto lg:my-8" />
-    <div class="sm:flex sm:items-center sm:justify-between wrapper">
-      <span class="text-sm text-gray-500 sm:text-center mb-4 sm:mb-0"
-        >© {{ currentYear }}
+    <hr class="my-2 border-gray-400 sm:mx-auto lg:my-4" />
+    <div class="flex items-center sm:justify-center flex-col wrapper">
+      <div class="flex items-center gap-3">
+        <span class="text-gray-300 inline-block mb-2"> Follows on:</span>
+        <LayoutSocials class="gap-x-2" />
+      </div>
+      <div class="text-sm text-gray-300 sm:text-center mb-4 sm:mb-0">
+        © {{ currentYear }}
         <NuxtLink to="/" class="hover:underline text-primary font-medium">
           IDM
         </NuxtLink>
         . All Rights Reserved.
-      </span>
-      <SocialLinks class="gap-x-6" />
+      </div>
     </div>
   </footer>
 </template>
