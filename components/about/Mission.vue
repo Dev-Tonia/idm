@@ -19,6 +19,14 @@
           <span class="font-medium">
             Provide African Enterprises Perfect Business Processes:</span
           >
+          With the SAP Business One in cooperated into their business it will
+          give them comprehensive ERP solution tailored for small and midsize
+          enterprises. With features spanning accounting, financial, inventory
+          management, sales, and reporting, it streamlines processes and
+          provides real-time insights. Whether deployed on-premise or in the
+          cloud, SAP Business One empowers businesses to achieve digital
+          transformation excellence, adapt to changing market dynamics, and
+          drive growth.
         </p>
       </div>
     </div>
