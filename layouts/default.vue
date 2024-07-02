@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <header class="fixed text-white z-20 w-full">
+  <header class="sticky top-0 text-white z-20 w-full">
     <LayoutTopNavbar />
     <nav class="wrapper py-2 backdrop-blur bg-white/75">
       <div

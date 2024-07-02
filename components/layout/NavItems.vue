@@ -1,7 +1,7 @@
 <template>
   <ul class="flex items-center space-x-4">
     <li class="text-sm font-rubik font-medium text-[#3c3d41] w-">
-      <NuxtLink class="uppercase"> About Us </NuxtLink>
+      <NuxtLink class="uppercase" to="/about"> About Us </NuxtLink>
     </li>
     <li class="text-sm font-rubik font-medium text-[#3c3d41] w-">
       <NuxtLink class="uppercase"> Software Services</NuxtLink>

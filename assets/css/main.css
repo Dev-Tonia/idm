@@ -6,3 +6,6 @@
 .wrapper {
   @apply px-3 sm:px-5 md:px-20;
 }
+html {
+  scroll-behavior: smooth;
+}

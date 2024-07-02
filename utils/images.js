@@ -17,8 +17,8 @@ import hoesch from "/assets/imgs/hoesch_PNG.png";
 import interdialog from "/assets/imgs/interdialog_700.png";
 import kolorkote from "/assets/imgs/kolorkote_PNG.png";
 import Logo_digischool from "/assets/imgs/Logo_digischool.png";
-
-// import {brandLogo} from "../../utils/images"
+import aboutUsImg from "/assets/imgs/about-us.webp";
+// import {aboutUsImg} from "../../utils/images"
 
 export {
   retailsImg,
@@ -40,4 +40,5 @@ export {
   interdialog,
   kolorkote,
   Logo_digischool,
+  aboutUsImg,
 };
