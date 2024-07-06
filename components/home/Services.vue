@@ -4,13 +4,12 @@
 
 <template>
   <section class="wrapper py-20 bg-[#F2F2F2]">
-    <HomeSubSectionTitle title=" What we can help you do " />
+    <CommonSubSectionTitle title=" What we can help you do " />
 
-    <h3
-      class="text-2xl xsm:text-3xl md:text-4xl text-center font-semibold text-gray-950"
-    >
-      Complete Consulting Services We Provider
-    </h3>
+    <CommonSectionTitle
+      class="text-2xl xsm:text-3xl text-center text-gray-950"
+      title="Complete Consulting Services We Provider"
+    />
     <p class="text-sm sm:text-base text-center w-9/12 mx-auto pt-2">
       We are committed to meticulously planning, executing, and delivering
       exceptional services and results.

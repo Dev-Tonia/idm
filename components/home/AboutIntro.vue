@@ -14,13 +14,11 @@ import { aboutIntroImg } from "../../utils/images";
 
       <div class="md:w-1/2">
         <div>
-          <HomeSubSectionTitle title=" About Us" />
-          <h2
-            class="text-3xl md:text-4xl text-secondary pb-5 pt-1 font-semibold"
-          >
+          <CommonSubSectionTitle title=" About Us" />
+          <CommonSectionTitle class="text-secondary">
             We Are Increasing Business Success With
             <span class="text-primary/90">IT Solution</span>
-          </h2>
+          </CommonSectionTitle>
         </div>
         <p class="text-gray-600 text-xl mb-5">
           Collaboratively envisioned user friendly supply chains and cross unit
@@ -29,9 +27,10 @@ import { aboutIntroImg } from "../../utils/images";
         </p>
 
         <div>
-          <CommonButton
-            class="bg-primary text-xl font-semibold px-10 transition ease-in-out delay-300 hover:bg-secondary/90 hover:text-white"
-            >Read More</CommonButton
+          <NuxtLink
+            class="bg-primary text-xl font-semibold text-white rounded-[40px] py-3 px-10 transition ease-in-out delay-300 hover:bg-secondary/90 hover:text-white"
+            to="/about"
+            >Read More</NuxtLink
           >
         </div>
       </div>

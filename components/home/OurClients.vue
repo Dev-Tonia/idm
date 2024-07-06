@@ -32,12 +32,11 @@ const clients = [
 
 <template>
   <section class="wrapper py-20">
-    <HomeSubSectionTitle title="Our Clients" />
-    <h2
-      class="text-3xl pb-5 pt-1 md:text-4xl text-secondary mb-5 font-semibold w-9/12"
-    >
-      A Look At Our Esteemed & Valued Partners
-    </h2>
+    <CommonSubSectionTitle title="Our Clients" />
+    <CommonSectionTitle
+      class="text-secondary w-9/12"
+      title=" A Look At Our Esteemed & Valued Partners"
+    />
 
     <swiper
       :breakpoints="{

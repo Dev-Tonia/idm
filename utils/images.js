@@ -25,8 +25,8 @@ import electronic from "/assets/imgs/electronic.webp";
 import logistics from "/assets/imgs/logistics.webp";
 import trade from "/assets/imgs/trade.jpg";
 import profServices from "/assets/imgs/professional-services.jpg";
-
-// import { retailsImg } from "../../utils/images";
+import aboutWhoWeAre from "/assets/imgs/about-img-2.jpg";
+// import { aboutWhoWeAre } from "../../utils/images";
 
 export {
   retailsImg,
@@ -56,4 +56,5 @@ export {
   electronic,
   trade,
   profServices,
+  aboutWhoWeAre,
 };

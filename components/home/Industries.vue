@@ -27,13 +27,11 @@ const items = [
 
 <template>
   <section class="wrapper py-20">
-    <HomeSubSectionTitle title=" Industries we serve" />
-    <h2
-      class="text-3xl pb-6 pt-1 md:text-4xl text-secondary mb-5 font-semibold w-9/12"
-    >
-      We strive to consistently and efficiently plan, execute and deliver high
-      quality services and results across serval Industries
-    </h2>
+    <CommonSubSectionTitle title=" Industries we serve" />
+    <CommonSectionTitle
+      class="text-secondary w-9/12"
+      title="  We strive to consistently and efficiently plan, execute and deliver high quality services and results across serval Industries"
+    />
 
     <swiper
       :breakpoints="{

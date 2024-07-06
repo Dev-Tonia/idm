@@ -1,21 +1,24 @@
 <template>
   <ul class="flex items-center space-x-4">
     <li class="text-sm font-rubik font-medium text-[#3c3d41] w-">
-      <NuxtLink class="uppercase" to="/about"> Home </NuxtLink>
+      <NuxtLink class="uppercase" to="/"> Home </NuxtLink>
     </li>
 
     <li class="text-sm font-rubik uppercase font-medium text-[#3c3d41]">
       <LayoutDropdown
+        class="cursor-default"
         :dropdownOptions="navLinks.services.items"
         @toggle="handleButtonClick(navLinks.services.title)"
         :isOpen="openDropdownIndex === navLinks.services.title"
-        itemClass="w-80 px-4 py-3"
+        itemClass="w-80 px-4 py-3 "
       >
         <template v-slot:title>
           <span class="uppercase">Service</span>
         </template>
         <template v-slot:top-extra>
-          <span class="uppercase">{{ navLinks.services.title }}</span>
+          <span class="uppercase cursor-default">{{
+            navLinks.services.title
+          }}</span>
         </template>
         <template v-slot:b-extra>
           <NuxtLink to="/"> School </NuxtLink>
