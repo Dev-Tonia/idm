@@ -1,5 +1,15 @@
 <script setup>
-import { retailsImg } from "../../utils/images";
+import {
+  healthcare,
+  automotive,
+  retailsImg,
+  manfacture,
+  logistics,
+  electronic,
+  trade,
+  profServices,
+} from "../../utils/images";
+
 const items = [
   retailsImg,
   retailsImg,

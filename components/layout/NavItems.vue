@@ -1,42 +1,61 @@
 <template>
   <ul class="flex items-center space-x-4">
     <li class="text-sm font-rubik font-medium text-[#3c3d41] w-">
-      <NuxtLink class="uppercase" to="/about"> About Us </NuxtLink>
+      <NuxtLink class="uppercase" to="/about"> Home </NuxtLink>
     </li>
-    <li class="text-sm font-rubik font-medium text-[#3c3d41] w-">
-      <NuxtLink class="uppercase"> Software Services</NuxtLink>
-    </li>
-    <li class="text-sm font-rubik font-medium text-[#3c3d41] w-">
-      <NuxtLink class="uppercase"> IDM School </NuxtLink>
-    </li>
+
     <li class="text-sm font-rubik uppercase font-medium text-[#3c3d41]">
       <LayoutDropdown
-        :dropdownOptions="sap.option"
-        @toggle="handleButtonClick(sap.title)"
-        :isOpen="openDropdownIndex === sap.title"
-        itemClass="w-80"
+        :dropdownOptions="navLinks.services.items"
+        @toggle="handleButtonClick(navLinks.services.title)"
+        :isOpen="openDropdownIndex === navLinks.services.title"
+        itemClass="w-80 px-4 py-3"
       >
-        <span class="uppercase">{{ sap.title }}</span>
+        <template v-slot:title>
+          <span class="uppercase">Service</span>
+        </template>
+        <template v-slot:top-extra>
+          <span class="uppercase">{{ navLinks.services.title }}</span>
+        </template>
+        <template v-slot:b-extra>
+          <NuxtLink to="/"> School </NuxtLink>
+        </template>
       </LayoutDropdown>
     </li>
     <li class="text-sm font-rubik uppercase font-medium text-[#3c3d41]">
       <LayoutDropdown
-        :dropdownOptions="products.option"
-        @toggle="handleButtonClick(products.title)"
-        :isOpen="openDropdownIndex === products.title"
+        :dropdownOptions="navLinks.industries.items"
+        @toggle="handleButtonClick(navLinks.industries.title)"
+        :isOpen="openDropdownIndex === navLinks.industries.title"
         itemClass="w-80"
       >
-        <span class="uppercase">{{ products.title }}</span>
+        <template v-slot:title>
+          <span class="uppercase">{{ navLinks.industries.title }}</span>
+        </template>
       </LayoutDropdown>
     </li>
     <li class="text-sm font-rubik uppercase font-medium text-[#3c3d41]">
       <LayoutDropdown
-        :dropdownOptions="industry.option"
-        @toggle="handleButtonClick(industry.title)"
-        :isOpen="openDropdownIndex === industry.title"
+        :dropdownOptions="navLinks.solutions.items"
+        @toggle="handleButtonClick(navLinks.solutions.title)"
+        :isOpen="openDropdownIndex === navLinks.solutions.title"
         itemClass="w-80"
       >
-        <span class="uppercase">{{ industry.title }}</span>
+        <template v-slot:title>
+          <span class="uppercase">{{ navLinks.solutions.title }}</span>
+        </template>
+      </LayoutDropdown>
+    </li>
+    <li class="text-sm font-rubik uppercase font-medium text-[#3c3d41]">
+      <LayoutDropdown
+        :dropdownOptions="navLinks.about.items"
+        @toggle="handleButtonClick(navLinks.about.title)"
+        :isOpen="openDropdownIndex === navLinks.about.title"
+        itemClass="w-80"
+      >
+        <template v-slot:title>
+          <span class="uppercase">{{ navLinks.about.title }}</span>
+        </template>
       </LayoutDropdown>
     </li>
     <li class="text-sm font-rubik font-medium text-[#3c3d41] w-">
@@ -46,6 +65,8 @@
 </template>
 
 <script setup>
+import { navLinks } from "../../utils/nav";
+
 const sap = {
   title: "Sap Solutions",
   option: [

@@ -110,13 +110,38 @@ export const navLinks = {
         to: "/",
       },
       {
-        id: 1,
+        id: 3,
         name: "Cloud Services",
         to: "/",
       },
       {
-        id: 1,
+        id: 4,
         name: "IDM @ Schools",
+        to: "/",
+      },
+    ],
+  },
+  about: {
+    title: "About Us ",
+    items: [
+      {
+        id: 1,
+        name: "About",
+        to: "/about",
+      },
+      {
+        id: 2,
+        name: "Vision",
+        to: "/",
+      },
+      {
+        id: 3,
+        name: "Blogs",
+        to: "/",
+      },
+      {
+        id: 4,
+        name: "Events",
         to: "/",
       },
     ],

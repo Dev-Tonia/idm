@@ -13,7 +13,7 @@ const toggleIsOpen = () => {
 </script>
 
 <template>
-  <footer class="bg-[#000017] text-gray-100 pt-9">
+  <footer class="bg-[#000017] text-gray-300 pt-9 pb-4">
     <div class="md:grid md:grid-cols-3 gap-6 wrapper">
       <div class="mb-6 md:mb-0 md:col-span-1">
         <div>

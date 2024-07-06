@@ -1,21 +1,28 @@
 <template>
   <div class="relative">
     <button @mouseenter="toggle" @mouseleave="toggle" class="anchor">
-      <slot></slot>
+      <div class="flex space-x-2 items-center">
+        <slot name="title"></slot>
+
+        <Icon name="ep:arrow-down-bold" class="text-secondary" />
+      </div>
       <div
         v-if="isOpen"
         class="menu flex shadow-md flex-col z-10 top-5 right-7 px-0 absolute bg-white text-left"
-        :class="itemClass"
+        :class="['py-3', itemClass]"
       >
+        <slot name="top-extra"></slot>
+
         <div
           class="menu-item font-medium"
           v-for="option in dropdownOptions"
-          :key="option.title"
+          :key="option.name"
         >
-          <NuxtLink :to="option.routeTo">
-            {{ option.title }}
+          <NuxtLink :to="option.to">
+            {{ option.name }}
           </NuxtLink>
         </div>
+        <slot name="b-extra"></slot>
       </div>
     </button>
   </div>
@@ -64,7 +71,6 @@ function toggle() {
 
 span {
   font-weight: bold;
-  color: #229954;
   font-size: 1rem;
 }
 </style>

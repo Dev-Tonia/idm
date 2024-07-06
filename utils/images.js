@@ -18,7 +18,15 @@ import interdialog from "/assets/imgs/interdialog_700.png";
 import kolorkote from "/assets/imgs/kolorkote_PNG.png";
 import Logo_digischool from "/assets/imgs/Logo_digischool.png";
 import aboutUsImg from "/assets/imgs/about-us.webp";
-// import {aboutUsImg} from "../../utils/images"
+import automotive from "/assets/imgs/automotive.webp";
+import healthcare from "/assets/imgs//healthcare.webp";
+import manfacture from "/assets/imgs/manfacture.jpg";
+import electronic from "/assets/imgs/electronic.webp";
+import logistics from "/assets/imgs/logistics.webp";
+import trade from "/assets/imgs/trade.jpg";
+import profServices from "/assets/imgs/professional-services.jpg";
+
+// import { retailsImg } from "../../utils/images";
 
 export {
   retailsImg,
@@ -41,4 +49,11 @@ export {
   kolorkote,
   Logo_digischool,
   aboutUsImg,
+  automotive,
+  healthcare,
+  manfacture,
+  logistics,
+  electronic,
+  trade,
+  profServices,
 };
