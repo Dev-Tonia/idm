@@ -1,38 +1,31 @@
 <template>
-  <section class="py-20 wrapper bg-secondary/20">
-    <div class="sm:flex gap-3">
-      <h2 class="text-4xl sm:text-5xl font-bold text-nowrap">
+  <section class="py-20 wrapper text-secondary bg-primary/[5%]">
+    <div class="">
+      <CommonSubSectionTitle title="mission " />
+      <CommonSectionTitle>
         <span class="text-primary">IDM'S</span> Mission
-      </h2>
-      <div class="sm:text-lg md:text-xl sm:mt-20">
+      </CommonSectionTitle>
+    </div>
+    <div class="md:flex items-center gap-10">
+      <div class="md:w-1/2">
+        <img :src="mission" alt="" />
+      </div>
+      <div class="md:text-xl lg:text-2xl md:w-1/2">
         <p>
-          <span class="font-medium"
-            >To Make Africa Enterprises Globally Competitive:</span
-          >
-          By integrating SAP Business One affordable ERP solution that helps
-          manage small and midsize companies. It covers various business
-          functions, including accounting, financial, purchasing, inventory,
-          sales, customer relationships (CRM), and reporting1.To streamlined
-          processes and Real-time Insights to their all their business
+          Our core mission is to make African Enterprises Globally Competitive.
         </p>
-        <p>
-          <span class="font-medium">
-            Provide African Enterprises Perfect Business Processes:</span
-          >
-          With the SAP Business One in cooperated into their business it will
-          give them comprehensive ERP solution tailored for small and midsize
-          enterprises. With features spanning accounting, financial, inventory
-          management, sales, and reporting, it streamlines processes and
-          provides real-time insights. Whether deployed on-premise or in the
-          cloud, SAP Business One empowers businesses to achieve digital
-          transformation excellence, adapt to changing market dynamics, and
-          drive growth.
+        <p class="mt-5">
+          Provide African enterprises perfect business processes and to also
+          facilitate a culture of customer care management in African
+          enterprises
         </p>
       </div>
     </div>
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { mission } from "../../utils/images";
+</script>
 
 <style lang="scss" scoped></style>

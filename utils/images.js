@@ -26,7 +26,11 @@ import logistics from "/assets/imgs/logistics.webp";
 import trade from "/assets/imgs/trade.jpg";
 import profServices from "/assets/imgs/professional-services.jpg";
 import aboutWhoWeAre from "/assets/imgs/about-img-2.jpg";
-// import { aboutWhoWeAre } from "../../utils/images";
+import mission from "/assets//imgs/dart.svg";
+import whyChooseUs from "/assets/imgs/why-choose-us.jpg";
+import bg_1 from "/assets/imgs/1.png";
+
+// import { whyChooseUs } from "../../utils/images";
 
 export {
   retailsImg,
@@ -57,4 +61,7 @@ export {
   trade,
   profServices,
   aboutWhoWeAre,
+  mission,
+  whyChooseUs,
+  bg_1,
 };

@@ -1,10 +1,10 @@
 <template>
-  <ul class="flex items-center space-x-4">
-    <li class="text-sm font-rubik font-medium text-[#3c3d41] w-">
+  <ul class="flex items-center text-secondary space-x-4">
+    <li class="text-sm font-rubik font-medium w-">
       <NuxtLink class="uppercase" to="/"> Home </NuxtLink>
     </li>
 
-    <li class="text-sm font-rubik uppercase font-medium text-[#3c3d41]">
+    <li class="text-sm font-rubik uppercase font-medium">
       <LayoutDropdown
         class="cursor-default"
         :dropdownOptions="navLinks.services.items"
@@ -25,7 +25,7 @@
         </template>
       </LayoutDropdown>
     </li>
-    <li class="text-sm font-rubik uppercase font-medium text-[#3c3d41]">
+    <li class="text-sm font-rubik uppercase font-medium">
       <LayoutDropdown
         :dropdownOptions="navLinks.industries.items"
         @toggle="handleButtonClick(navLinks.industries.title)"
@@ -37,7 +37,7 @@
         </template>
       </LayoutDropdown>
     </li>
-    <li class="text-sm font-rubik uppercase font-medium text-[#3c3d41]">
+    <li class="text-sm font-rubik uppercase font-medium">
       <LayoutDropdown
         :dropdownOptions="navLinks.solutions.items"
         @toggle="handleButtonClick(navLinks.solutions.title)"
@@ -49,7 +49,7 @@
         </template>
       </LayoutDropdown>
     </li>
-    <li class="text-sm font-rubik uppercase font-medium text-[#3c3d41]">
+    <li class="text-sm font-rubik uppercase font-medium">
       <LayoutDropdown
         :dropdownOptions="navLinks.about.items"
         @toggle="handleButtonClick(navLinks.about.title)"
@@ -61,8 +61,8 @@
         </template>
       </LayoutDropdown>
     </li>
-    <li class="text-sm font-rubik font-medium text-[#3c3d41] w-">
-      <NuxtLink class="uppercase"> Contact Us </NuxtLink>
+    <li class="text-sm font-rubik font-medium w-">
+      <NuxtLink class="uppercase" to="/contact-us"> Contact Us </NuxtLink>
     </li>
   </ul>
 </template>

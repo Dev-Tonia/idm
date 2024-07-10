@@ -31,11 +31,11 @@ const clients = [
 </script>
 
 <template>
-  <section class="wrapper py-20">
+  <section class="wrapper py-16">
     <CommonSubSectionTitle title="Our Clients" />
     <CommonSectionTitle
       class="text-secondary w-9/12"
-      title=" A Look At Our Esteemed & Valued Partners"
+      title="Look At Our Esteemed & Valued Partners"
     />
 
     <swiper

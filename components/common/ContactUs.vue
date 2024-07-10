@@ -4,7 +4,7 @@ import { sliderImg2 } from "../../utils/images";
 
 <template>
   <section
-    class="wrapper py-20"
+    class="wrapper py-16"
     :style="{ backgroundImage: `url(${sliderImg2})` }"
   >
     <div

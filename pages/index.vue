@@ -5,8 +5,8 @@
   <HomeServices />
   <HomeAboutIntro />
   <HomeIndustries />
-  <HomeContactUs />
-  <HomeOurClients />
+  <CommonContactUs />
+  <CommonOurClients />
 </template>
 
 <style lang="scss" scoped></style>
