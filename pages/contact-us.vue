@@ -1,5 +1,8 @@
 <template>
-  <div></div>
+  <ContactHeroImage />
+  <ContactIntro />
+  <ContactGetInTouch />
+  <CommonOurClients />
 </template>
 
 <script setup></script>

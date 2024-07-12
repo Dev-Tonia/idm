@@ -29,8 +29,9 @@ import aboutWhoWeAre from "/assets/imgs/about-img-2.jpg";
 import mission from "/assets//imgs/dart.svg";
 import whyChooseUs from "/assets/imgs/why-choose-us.jpg";
 import bg_1 from "/assets/imgs/1.png";
+import contactUs from "/assets/imgs/Contact-Us.jpg";
 
-// import { whyChooseUs } from "../../utils/images";
+// import { contactUs } from "../../utils/images";
 
 export {
   retailsImg,
@@ -64,4 +65,5 @@ export {
   mission,
   whyChooseUs,
   bg_1,
+  contactUs,
 };
