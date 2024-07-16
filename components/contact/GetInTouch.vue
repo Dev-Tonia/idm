@@ -11,9 +11,7 @@
             <Icon name="ri:mail-send-fill" class="text-4xl" />
           </span>
           <span>
-            <a href="mailto:complaints@easypaybills.ng">
-              complaints@easypaybills.ng</a
-            ></span
+            <a href="mailto:enquiry@idmng.com"> enquiry@idmng.com</a></span
           >
         </div>
         <!-- <i class="ri-smartphone-fill"></i> -->
@@ -35,7 +33,7 @@
             <Icon name="ri-smartphone-fill" class="text-4xl" />
           </span>
           <span class="flex flex-col">
-            <a href="tel:+2349087610511">+2349087610511</a>
+            <a href="tel:+23456565656">+2345656565655</a>
           </span>
         </div>
       </div>

@@ -4,10 +4,12 @@ import { required, email } from "@vuelidate/validators";
 // const formData = ref(formInitial);
 const formData = reactive({
   email: "",
-  firstName: "",
-  lastName: "",
+  fullName: "",
+  companyType: "",
   phoneNumber: "",
+  designation: "",
   additionalInfo: "",
+  enquiryType: "",
 });
 const rules = computed(() => {
   return {
@@ -15,10 +17,12 @@ const rules = computed(() => {
       required,
       email,
     },
-    firstName: { required },
-    lastName: { required },
+    fullName: { required },
+    companyType: { required },
     phoneNumber: { required },
     additionalInfo: { required },
+    designation: { required },
+    enquiryType: { required },
   };
 });
 
@@ -34,22 +38,18 @@ const submit = async () => {
     modalMsg.value = "Error Occurred \nAll the input field are required.";
     return;
   } else {
-    console.log("contact", {
-      first_name: formData.firstName,
-      last_name: formData.lastName,
-      phone: formData.phoneNumber,
-      info: formData.additionalInfo,
-    });
     error.value = false;
     isOpen.value = true;
-    modalMsg.value = "Thank you for contacting C2construction Service .";
+    modalMsg.value = "Thank you for contacting IDM Service .";
   }
 
-  formData.firstName = "";
-  formData.lastName = "";
+  formData.fullName = "";
+  formData.companyType = "";
   formData.email = "";
   formData.phoneNumber = "";
   formData.additionalInfo = "";
+  formData.designation = "";
+  formData.enquiryType = "";
 };
 function closeModal() {
   isOpen.value = false;
@@ -70,21 +70,23 @@ function closeModal() {
     <div class="flex gap-4">
       <ContactCustomInput
         class="w-full"
-        v-model="formData.firstName"
+        v-model="formData.fullName"
         place-holder="Enter First Name"
         label="First Name"
         id="name"
         type="text"
-        :error="v$.firstName.$error"
+        :error="v$.fullName.$error"
       />
+      <!-- Phone number input -->
+
       <ContactCustomInput
+        v-model="formData.phoneNumber"
         class="w-full"
-        v-model="formData.lastName"
-        place-holder="Enter Last Name"
-        label="Last Name"
-        id="name"
+        place-holder="(123) 456 789"
+        label="Phone Number"
+        id="phoneNumber"
         type="text"
-        :error="v$.lastName.$error"
+        :error="v$.phoneNumber.$error"
       />
     </div>
 
@@ -97,16 +99,64 @@ function closeModal() {
       type="email"
       :error="v$.email.$error"
     />
-
-    <!-- Phone number input -->
+    <!-- Company/school -->
     <ContactCustomInput
-      v-model="formData.phoneNumber"
-      place-holder="(123) 456 789"
-      label="Phone Number"
-      id="phoneNumber"
+      class="w-full"
+      v-model="formData.companyType"
+      place-holder="Enter Your company or school"
+      label="Company Type"
+      id="company"
       type="text"
-      :error="v$.phoneNumber.$error"
+      :error="v$.companyType.$error"
     />
+    <ContactCustomInput
+      class="w-full"
+      v-model="formData.designation"
+      place-holder="Enter Your designation"
+      label="Company Type"
+      id="company"
+      type="text"
+      :error="v$.designation.$error"
+    />
+    <div class="relative mb-4">
+      <label for="enquiry" class="text-sm leading-7 text-gray-400"
+        >Enquiry Type</label
+      >
+      <div class="relative">
+        <select
+          name="cars"
+          id="cars"
+          class="w-full rounded border border-gray-600 bg-transparent bg-opacity-20 py-1 px-3 text-base leading-8 text-gray-900 outline-none transition-colors duration-200 ease-in-out placeholder:text-gray-500 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-transparent"
+          :class="{
+            'border-red-500 focus:border-red-500': error,
+            'border-[#42d392] ': !error,
+          }"
+        >
+          <optgroup label="SAP">
+            <option value="volvo">Demo</option>
+            <option value="saab">Training</option>
+          </optgroup>
+          <optgroup label="School">
+            <option value="mercedes">Training</option>
+            <option value="audi">IDM@School</option>
+          </optgroup>
+        </select>
+        <!-- <input
+        :type="type"
+        :id="id"
+        :name="id"
+        :placeholder="placeHolder"
+        :value="modelValue"
+        @input="$emit('update:modelValue', $event.target.value)"
+        v-bind="$attrs"
+        class="w-full rounded border border-gray-600 bg-transparent bg-opacity-20 py-1 px-3 text-base leading-8 text-gray-900 outline-none transition-colors duration-200 ease-in-out placeholder:text-gray-500 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-transparent"
+        :class="{
+          'border-red-500 focus:border-red-500': error,
+          'border-[#42d392] ': !error,
+        }"
+      /> -->
+      </div>
+    </div>
     <!-- textarea -->
     <ContactCustomTextArea
       v-model="formData.additionalInfo"
@@ -122,7 +172,7 @@ function closeModal() {
       Submit
     </button>
   </form>
-  <Modal
+  <CommonModal
     :data="modalMsg"
     @close-modal="closeModal"
     v-if="isOpen"
